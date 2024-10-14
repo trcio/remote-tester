@@ -1,10 +1,14 @@
 #include "sled.h"
 
 struct CRGB {
-  u8 r;
-  u8 g;
-  u8 b;
-}
+  uint8_t r;
+  uint8_t g;
+  uint8_t b;
+
+  inline CRGB(uint32_t colorcode) __attribute__((always_inline)) : r((colorcode >> 16) & 0xFF), g((colorcode >> 8) & 0xFF), b((colorcode >> 0) & 0xFF) {}
+
+  typedef enum { Black = 0, White = 0xFFFFFF } HTMLColor;
+};
 
 void setup() {}
 
