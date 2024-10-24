@@ -8,10 +8,10 @@ void setup() {}
 
 void loop() {
   for (int i = 0; i < ctx->ledCount; ++i)
-    ctx->leds[i] = CRGB::Black;
+    ctx->leds[i] = {0, 0, 0};
 
   static int index = 0;
-  ctx->leds[index++] = CRGB::White;
+  ctx->leds[index++] = {255, 255, 255};
   if (index >= ctx->ledCount)
     index = 0;
 }
