@@ -1,0 +1,23 @@
+{
+  "name": "sled-starter",
+  "version": "1.0.0",
+  "description": "for the quickest first deployment",
+  "type": "module",
+  "author": "patricio @trcio",
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/node": "^22.7.9",
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
+  },
+  "prettier": {
+    "printWidth": 160,
+    "tabWidth": 2,
+    "useTabs": false,
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "semi": true,
+    "bracketSpacing": false
+  }
+}
