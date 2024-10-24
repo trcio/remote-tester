@@ -1,5 +1,9 @@
 #include "sled.h"
 
+struct CRGB {
+  uint8_t r, g, b;
+};
+
 void setup() {}
 
 void loop() {
